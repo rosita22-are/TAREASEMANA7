@@ -1,0 +1,44 @@
+"""
+Programa: Cálculo del área de un rectángulo
+Descripción: Este programa calcula el área de un rectángulo utilizando
+datos reales y muestra el resultado en pantalla.
+Autor: Reyes Reyes
+Fecha: 11/01/2026
+"""
+
+# Función para calcular el área del rectángulo
+def calcular_area_rectangulo(largo, ancho):
+    """
+    Calcula el área de un rectángulo.
+    :param largo: valor del largo (float)
+    :param ancho: valor del ancho (float)
+    :return: área del rectángulo (float)
+    """
+    area = largo * ancho
+    return area
+
+
+# Programa principal
+def main():
+    # Datos reales del usuario
+    nombre_usuario = "Mario"          # Tipo de dato: string
+    largo_rectangulo = 8.5            # Tipo de dato: float
+    ancho_rectangulo = 4.2            # Tipo de dato: float
+
+    # Cálculo del área
+    area_rectangulo = calcular_area_rectangulo(largo_rectangulo, ancho_rectangulo)
+
+    # Tipo de dato boolean
+    area_valida = area_rectangulo > 0
+
+    # Mostrar resultados
+    print("---- RESULTADOS ----")
+    print("Nombre del usuario:", nombre_usuario)
+    print("Largo del rectángulo:", largo_rectangulo)
+    print("Ancho del rectángulo:", ancho_rectangulo)
+    print("Área del rectángulo:", area_rectangulo)
+    print("¿El área es válida?:", area_valida)
+
+
+# Ejecución del programa
+main()
